@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session Test - GroupId & DeviceId</title>
+</head>
+<body>
+    <h2>Test GroupId and DeviceId via Query String</h2>
+    <form method="get" action="">
+        <label for="groupId">GroupId (GUID):</label>
+        <input type="text" id="groupId" name="GroupId" placeholder="e.g., a1b2c3d4-e5f6-7890-abcd-ef1234567890" required><br><br>
+
+        <label for="deviceId">DeviceId (GUID):</label>
+        <input type="text" id="deviceId" name="DeviceId" placeholder="e.g., 123e4567-e89b-12d3-a456-426614174000" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p><strong>Note:</strong> This form reloads the page with the entered values in the URL. Your backend should read these using <code>Request.QueryString</code> and optionally set them to the session.</p>
+</body>
+</html>
